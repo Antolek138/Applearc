@@ -1,0 +1,96 @@
+//*Normal Colors
+$yellow: #f8b500;
+$gray: #5c636e;
+$darkGray: #393e46;
+$white: #f7f7f7;
+
+//*Light Mode
+$bg-light: #f7f7f7;
+$title-text-light: #393e46;
+$text-light: #5c636e;
+$box-color-light: #d9d9d9;
+
+//*Dark Mode
+$bg-dark: #393e46;
+$title-text-dark: #f7f7f7;
+$box-color-dark: #f7f7f7;
+
+[data-mode='light'] {
+	background-color: $bg-light;
+
+	.main__title {
+		&-titleOne {
+			color: $title-text-light;
+		}
+	}
+
+    .btn-mode{
+        background-color: $bg-dark;
+
+        &-light{
+            display: block;
+        }
+    }
+
+    .price__cards-card{
+        background-color: $bg-light;
+    }
+
+    .price__cards-card-title{
+        color: $bg-dark;
+    }
+
+    .price__cards-card-text{
+        color: $text-light;
+    }
+
+    .project{
+        background-color: $bg-light;
+
+        .main__title{
+            &-titleOne{
+                color: $bg-dark;
+            }
+        }
+    }
+}
+
+[data-mode='dark'] {
+	background-color: $bg-dark;
+
+    .main__title {
+		&-titleOne {
+			color: $title-text-dark;
+		}
+	}
+
+    .btn-mode{
+        background-color: $bg-light;
+
+        &-dark{
+            display: block;
+        }
+    }
+
+    .price__cards-card{
+        background-color: $bg-dark;
+    }
+
+    .price__cards-card-title{
+        color: $yellow;
+    }
+
+    .price__cards-card-text{
+        color: $white;
+    }
+
+    .project{
+        background-color: $bg-dark;
+
+        .main__title{
+            &-titleOne{
+                color: $bg-light;
+            }
+        }
+    }
+}
