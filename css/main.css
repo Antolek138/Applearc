@@ -76,7 +76,7 @@
   opacity: 0;
   scale: 0;
   transform: translateX(-50%);
-  transition: opacity 0.8s 0.5s;
+  transition: opacity 0.8s 0.5s, scale 0.5s;
   cursor: pointer;
 }
 .btn-mode--active {
@@ -125,9 +125,9 @@
     font-size: 3rem;
   }
   .btn-mode {
-    top: 100%;
-    left: clamp(88%, 700px, 90%);
-    translate: 0;
+    top: 60px;
+    left: 80%;
+    scale: 1;
     opacity: 1;
   }
 }
@@ -139,7 +139,8 @@
     font-size: 3.2rem;
   }
   .btn-mode {
-    top: 80px;
+    top: 70px;
+    left: 95%;
   }
 }
 * {

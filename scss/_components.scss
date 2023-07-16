@@ -6,7 +6,7 @@
 	max-width: 1200px;
 }
 
-.blocked{
+.blocked {
 	overflow: hidden;
 }
 
@@ -22,7 +22,7 @@
 	opacity: 0;
 	scale: 0;
 	transform: translateX(-50%);
-	transition: opacity 0.8s 0.5s;
+	transition: opacity 0.8s 0.5s, scale 0.5s;
 	cursor: pointer;
 
 	&--active {
@@ -83,10 +83,10 @@
 		}
 	}
 
-	.btn-mode{
-		top: 100%;
-		left: clamp(88%, 700px, 90%);
-		translate: 0;
+	.btn-mode {
+		top: 60px;
+		left: 80%;
+		scale: 1;
 		opacity: 1;
 	}
 }
@@ -101,8 +101,8 @@
 		}
 	}
 
-	.btn-mode{
-		top: 80px;
-		
+	.btn-mode {
+		top: 70px;
+		left: 95%;
 	}
 }

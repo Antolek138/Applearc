@@ -33,6 +33,7 @@ function handleRemoveNav() {
 	menu.classList.remove('nav__menu--active')
 	bars.classList.remove('nav__bars--active')
 	dark.classList.remove('btn-mode--active')
+	body.classList.remove('blocked')
 }
 
 window.addEventListener('scroll', function () {
