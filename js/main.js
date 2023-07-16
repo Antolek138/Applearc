@@ -9,12 +9,14 @@ const handleNav = () => {
 	menu.classList.toggle('nav__menu--active')
 	bars.classList.toggle('nav__bars--active')
 	dark.classList.toggle('btn-mode--active')
+	body.classList.toggle('blocked')
 
 	allNavItems.forEach(item =>
 		item.addEventListener('click', () => {
 			menu.classList.remove('nav__menu--active')
 			bars.classList.remove('nav__bars--active')
 			dark.classList.remove('btn-mode--active')
+			body.classList.remove('blocked')
 		})
 	)
 }

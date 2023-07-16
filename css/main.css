@@ -60,24 +60,28 @@
   max-width: 1200px;
 }
 
+.blocked {
+  overflow: hidden;
+}
+
 .btn-mode {
   display: block;
   position: absolute;
-  top: 700%;
+  bottom: 22%;
   left: 50%;
   height: 50px;
   width: 50px;
   border-radius: 10px;
   background-color: #393e46;
   opacity: 0;
-  translate: 400% 0;
+  scale: 0;
   transform: translateX(-50%);
   transition: opacity 0.8s 0.5s;
   cursor: pointer;
 }
 .btn-mode--active {
   opacity: 1;
-  translate: 0;
+  scale: 1;
 }
 .btn-mode-dark, .btn-mode-light {
   position: absolute;
@@ -204,6 +208,7 @@ body {
   translate: 0 -8px;
 }
 .nav__menu {
+  position: relative;
   display: flex;
   justify-content: space-evenly;
   align-items: center;

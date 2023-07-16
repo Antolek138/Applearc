@@ -6,24 +6,28 @@
 	max-width: 1200px;
 }
 
+.blocked{
+	overflow: hidden;
+}
+
 .btn-mode {
 	display: block;
 	position: absolute;
-	top: 700%;
+	bottom: 22%;
 	left: 50%;
 	height: 50px;
 	width: 50px;
 	border-radius: 10px;
 	background-color: $bg-dark;
 	opacity: 0;
-	translate: 400% 0;
+	scale: 0;
 	transform: translateX(-50%);
 	transition: opacity 0.8s 0.5s;
 	cursor: pointer;
 
 	&--active {
 		opacity: 1;
-		translate: 0;
+		scale: 1;
 	}
 
 	&-dark,
